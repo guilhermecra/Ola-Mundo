@@ -1,0 +1,98 @@
+print('Aula #07 - Operadores Aritméticos\nSegue Desafios:')
+
+print('-' *12)
+
+print('DESAFIO 005 = Faça um programa que leia um número inteiro e mostre na tela o seu sucesor e seu antecessor')
+n1=int(input('Escolha um número: '))
+print('O antecessor é {} e o sucessor é {}'.format((n1-1),(n1+1)))
+
+print('-' *12)
+
+print('DESAFIO 006 = Crie um algoritmo que leia um número e mostre o seu dobre, triplo e raiz quadrada.')
+n1=int(input('Escolha um número: '))
+d=n1*2
+t=n1*3
+raiz=n1 ** (1/2)
+print('O dobro vale {};\nO triplo {};\nE a raiz quadrada vale {:.0f}.'.format(d,t,raiz))
+
+print('-' *12)
+
+print('DESAFIO 007 = Desenolva um programa que leia as duas notas de um aluno, calcule e mostre a média.')
+n1=float(input('Nota 1: '))
+n2=float(input('Nota 2: '))
+soma=(n1+n2)
+media=(soma/2)
+print('A soma entre as duas notas é {}, e a média {:.1f}.'.format(soma,media))
+
+print('-' *12)
+
+print('DESAFIO 008 = Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros')
+n1=float(input('Uma distância em metros: '))
+mtocm=(n1*100)
+mtomm=(n1*1000)
+print('O valor escolhido em centímetros é {} cm\nEm milímetros é {} mm.'.format(mtocm,mtomm))
+
+print('-' *12)
+
+print('DESAFIO 009 = Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada')
+n1=int(input('Escolha um número: '))
+print('Segue tabuada do número escolhido:')
+print('-' *4)
+print('{} x {} = {}'.format(n1,1,(n1*1)))
+print('{} x {} = {}'.format(n1,2,(n1*2)))
+print('{} x {} = {}'.format(n1,3,(n1*3)))
+print('{} x {} = {}'.format(n1,4,(n1*4)))
+print('{} x {} = {}'.format(n1,5,(n1*5)))
+print('{} x {} = {}'.format(n1,6,(n1*6)))
+print('{} x {} = {}'.format(n1,7,(n1*7)))
+print('{} x {} = {}'.format(n1,8,(n1*8)))
+print('{} x {} = {}'.format(n1,9,(n1*9)))
+print('{} x {} = {}'.format(n1,10,(n1*10)))
+print('-' *4)
+
+print('-' *12)
+
+print('DESAFIO 010 = Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar')
+carteira=(float(input('Quantos R$ você possui em sua carteira: R$ ')))
+dólar=5.33
+conversão=(carteira/dólar)
+print('Você possui R$ {:.2f} em sua carteira, assim, detém um poder de compra de US$ {:.2f}.'.format(carteira,conversão))
+
+print('-' *12)
+
+print('DESAFIO 011 = Faça um programa que leia a largura e a altura de uma parede em metros, calcule a seua área e a quantidade de tinta necessaria para pinta-lá,\nsabendo que cada litro de tinta, pinta uma área de 2mˆ2')
+largura=float(input('Qual é a largura da parede: '))
+altura=float(input('Qual a altura da parede: '))
+área=largura*altura
+print('Sua parede tem a dimesão de {}x{} e a sua área é de {:.2f}m2.'.format(largura,altura,área))
+tinta=área/2
+print('Para pintar essa parede, você precisará de {:.2f}L de tinta.'.format(tinta))
+
+print('-' *12)
+
+print('DESAFIO 012 = Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto')
+preço1=float(input('Preço sem desconto: '))
+desconto=(preço1*(1-0.05))
+print('O preço com desconto fica {:.2f}'.format(desconto))
+
+print('-' *12)
+
+print('DESAFIO 013 = Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento')
+salário1=float(input('Salário antigo: '))
+aumento=(salário1*(1+0.15))
+print('O novo salário com o aumento vai resultar em {:.2f}'.format(aumento))
+
+print('-' *12)
+
+print('DESAFIO 014 = Escreva um programa que converta uma temperatura digitada em C* e converta em F*')
+c=float(input('Informe a temperatura em Celsius: '))
+f=(c*(9/5))+32
+print('A tempetura de {:.1f} C correspobde a {:.1f} F.'.format(c,f))
+
+print('-' *12)
+
+print('DESAFIO 015 = Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado.\nCalcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por Km rodado.')
+dias=int(input('Quantidade de dias alugado: '))
+km=float(input('Quantidade de Km percorrido: '))
+total=(dias*60)+(km*0.15)
+print('O valor total a ser pago é de R$ {:.2f}.'.format(total))
